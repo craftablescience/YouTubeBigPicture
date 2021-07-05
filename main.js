@@ -8,7 +8,7 @@ function createWindow () {
         minWidth: 800,
         minHeight: 600,
         fullscreen: true,
-		icon: __dirname + '/icon.ico',
+		icon: path.join(__dirname, 'icon.ico'),
         acceptFirstMouse: true,
         webPreferences: {
             devTools: false,
