@@ -8,6 +8,7 @@ function createWindow () {
         minWidth: 800,
         minHeight: 600,
         fullscreen: true,
+		icon: __dirname + '/icon.ico',
         acceptFirstMouse: true,
         webPreferences: {
             devTools: false,
@@ -23,7 +24,7 @@ function createWindow () {
     // Open the DevTools.
     //win.webContents.openDevTools()
 
-    // Taken from StackOverflow at []
+    // Taken from StackOverflow at [https://stackoverflow.com/questions/48668767/electron-open-external-web-url]
     win.maximize();
 
     win.loadURL("https://youtube.com/");
